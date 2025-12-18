@@ -1,100 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes Collection</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            background: white;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #666;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quotes Collection</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    ol {
+        padding-left: 20px;
+    }
+    li {
+        background: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: background-color 0.3s, border 0.3s;
+    }
+    li.highlight {
+        background-color: #fff3b0;
+        border: 2px solid #f0c000;
+    }
+    a.link-icon {
+        text-decoration: none;
+        margin-left: 8px;
+    }
+</style>
 </head>
 <body>
-    <h1>QuoteMaster Collection</h1>
-<ul>
-    <li id="toby">
-        "Toby is cool." – Dylan Groff
-        <a href="#toby" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="dylan">
-        "Dylan is cool." – Tobias Haxhi
-        <a href="#dylan" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="kay">
-        "The best way to predict the future is to invent it." – Alan Kay
-        <a href="#kay" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="lennon">
-        "Life is what happens when you're busy making other plans." – John Lennon
-        <a href="#lennon" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="emerson">
-        "Do not go where the path may lead, go instead where there is no path and leave a trail." – Ralph Waldo Emerson
-        <a href="#emerson" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="einstein1">
-        "In the middle of difficulty lies opportunity." – Albert Einstein
-        <a href="#einstein1" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="wilde">
-        "Be yourself; everyone else is already taken." – Oscar Wilde
-        <a href="#wilde" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="churchill">
-        "Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill
-        <a href="#churchill" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="dalai">
-        "Happiness is not something ready made. It comes from your own actions." – Dalai Lama
-        <a href="#dalai" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="roosevelt1">
-        "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
-        <a href="#roosevelt1" style="text-decoration:none; margin-left:5px;">🔗</a>
-    </li>
-    <li id="einstein2">
-        "Imagination is more important than knowledge." – Albert Einstein
-        <a href="#einstein2" style="text-decoration:none; margin-left:5px;">🔗</a>
+<h1>My Favorite Quotes</h1>
+<ol>
+    <li id="addair">
+        "Everything you’ve ever wanted is on the other side of fear." – George Addair
+        <a href="#addair" class="link-icon">🔗</a>
     </li>
     <li id="confucius">
         "It does not matter how slowly you go as long as you do not stop." – Confucius
-        <a href="#confucius" style="text-decoration:none; margin-left:5px;">🔗</a>
+        <a href="#confucius" class="link-icon">🔗</a>
     </li>
-    <li id="addair">
-        "Everything you’ve ever wanted is on the other side of fear." – George Addair
-        <a href="#addair" style="text-decoration:none; margin-left:5px;">🔗</a>
+    <li id="dalai">
+        "Happiness is not something ready made. It comes from your own actions." – Dalai Lama
+        <a href="#dalai" class="link-icon">🔗</a>
+    </li>
+    <li id="dylan">
+        "Dylan is cool." – Tobias Haxhi
+        <a href="#dylan" class="link-icon">🔗</a>
+    </li>
+    <li id="emerson">
+        "Do not go where the path may lead, go instead where there is no path and leave a trail." – Ralph Waldo Emerson
+        <a href="#emerson" class="link-icon">🔗</a>
+    </li>
+    <li id="einstein1">
+        "In the middle of difficulty lies opportunity." – Albert Einstein
+        <a href="#einstein1" class="link-icon">🔗</a>
+    </li>
+    <li id="kay">
+        "The best way to predict the future is to invent it." – Alan Kay
+        <a href="#kay" class="link-icon">🔗</a>
+    </li>
+    <li id="lennon">
+        "Life is what happens when you're busy making other plans." – John Lennon
+        <a href="#lennon" class="link-icon">🔗</a>
     </li>
     <li id="roosevelt2">
         "Do what you can, with what you have, where you are." – Theodore Roosevelt
-        <a href="#roosevelt2" style="text-decoration:none; margin-left:5px;">🔗</a>
+        <a href="#roosevelt2" class="link-icon">🔗</a>
     </li>
-</ul>
+    <li id="roosevelt1">
+        "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
+        <a href="#roosevelt1" class="link-icon">🔗</a>
+    </li>
+    <li id="toby">
+        "Toby is cool." – Dylan Groff
+        <a href="#toby" class="link-icon">🔗</a>
+    </li>
+    <li id="wilde">
+        "Be yourself; everyone else is already taken." – Oscar Wilde
+        <a href="#wilde" class="link-icon">🔗</a>
+    </li>
+    <li id="churchill">
+        "Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill
+        <a href="#churchill" class="link-icon">🔗</a>
+    </li>
+    <li id="einstein2">
+        "Imagination is more important than knowledge." – Albert Einstein
+        <a href="#einstein2" class="link-icon">🔗</a>
+    </li>
+</ol>
 
+<script>
+// Highlight the quote if its hash is in the URL
+function highlightQuote() {
+    // Remove highlight from any previously highlighted
+    document.querySelectorAll('li.highlight').forEach(li => li.classList.remove('highlight'));
 
-    <footer>&copy; 2025 quotemaster000. All rights reserved.</footer>
+    const hash = window.location.hash.substring(1);
+    if (!hash) return;
+
+    const target = document.getElementById(hash);
+    if (target) {
+        target.classList.add('highlight');
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+
+// Highlight on page load
+window.addEventListener('load', highlightQuote);
+
+// Highlight when hash changes (clicking a link)
+window.addEventListener('hashchange', highlightQuote);
+</script>
 </body>
 </html>
