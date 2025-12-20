@@ -118,6 +118,23 @@
         color: var(--muted);
         font-size: 0.9rem;
     }
+    
+    #search {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    
+    #search:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+
 </style>
 </head>
 <body>
@@ -128,6 +145,13 @@
 </header>
 
 <main>
+    <input
+    type="text"
+    id="search"
+    placeholder="Search quotes or authors..."
+    aria-label="Search quotes"
+    />
+
 <ol>
     <li id="addair">
         <div class="quote-text">Everything you’ve ever wanted is on the other side of fear.</div>
@@ -420,6 +444,18 @@ function highlightQuote() {
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 }
+
+const searchInput = document.getElementById('search');
+const quotes = document.querySelectorAll('ol li');
+
+searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+
+    quotes.forEach(li => {
+        const text = li.innerText.toLowerCase();
+        li.style.display = text.includes(query) ? '' : 'none';
+    });
+});
 
 window.addEventListener('load', highlightQuote);
 window.addEventListener('hashchange', highlightQuote);
